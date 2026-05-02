@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoldaPod: Origami Privacy Pod | Reda El Mikkawi</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="project-styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="../index.html" class="logo">REM</a>
+            <ul class="nav-links">
+                <li><a href="../index.html#home">Home</a></li>
+                <li><a href="../index.html#projects">Projects</a></li>
+                <li><a href="../index.html#experience">Experience</a></li>
+                <li><a href="../index.html#skills">Skills</a></li>
+                <li><a href="../index.html#certifications">Certifications</a></li>
+                <li><a href="../RedaElMikkawi-CV.pdf" target="_blank" class="cv-btn">CV</a></li>
+            </ul>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <section class="project-detail">
+        <div class="container">
+            <div class="project-header">
+                <a href="../index.html#projects" class="back-link"><i class="fas fa-arrow-left"></i> Back to Projects</a>
+                <h1>FoldaPod: Origami-Inspired Privacy Pod</h1>
+                <div class="project-meta">
+                    <span class="meta-item"><i class="fas fa-calendar"></i> 2026</span>
+                    <span class="meta-item"><i class="fas fa-tag"></i> Final Year Project</span>
+                    <span class="meta-item"><i class="fas fa-users"></i> Team of 4</span>
+                </div>
+            </div>
+
+            <div class="project-showcase">
+                <img src="../images/projects/foldapod/ProfileFoldapod.png" alt="FoldaPod Design" class="showcase-image">
+            </div>
+
+            <div class="project-description">
+                <h2>Project Overview</h2>
+                <p>FoldaPod is an origami-inspired deployable privacy pod designed for women and girls in crisis zones, refugee camps, and emergency shelters. The project combines humanitarian design principles with advanced mechanical engineering, utilizing bistable origami structures, CAD modeling, FEA simulation, and prototype fabrication.</p>
+                
+                <h3>Key Features</h3>
+                <ul>
+                    <li>Compact folded profile: 120 x 50 x 10 cm for efficient transport</li>
+                    <li>Rapid deployment in under 3 minutes without tools</li>
+                    <li>Approximately 1 m² of usable private space</li>
+                    <li>Minimum height of 1.8 m for standing use</li>
+                    <li>Wind resistance verified up to 15 km/h</li>
+                    <li>Designed for 200+ deployment cycles</li>
+                </ul>
+            </div>
+
+            <div class="project-section">
+                <h2>Engineering Design</h2>
+                <div class="content-card">
+                    <h3>Origami Engineering Principles</h3>
+                    <p>The design leverages multistable origami principles from Harvard research (Melancon et al., 2021), adapted for low-cost humanitarian applications:</p>
+                    <ul>
+                        <li><strong>Rigid Facets:</strong> Stiff triangular panels that maintain structural integrity</li>
+                        <li><strong>Compliant Fold Lines:</strong> Controlled scoring for repeated folding</li>
+                        <li><strong>Bistable States:</strong> Stable folded and deployed configurations</li>
+                        <li><strong>Geometric Compatibility:</strong> Mathematical validation of deployment path</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="project-section">
+                <h2>CAD Design & Fabrication</h2>
+                <div class="content-card">
+                    <h3>Design Workflow</h3>
+                    <ol>
+                        <li>SolidWorks 3D modeling for form verification and visualization</li>
+                        <li>AutoCAD 2D drafting for laser cutting patterns</li>
+                        <li>Material selection: 2mm corrugated polypropylene sheet</li>
+                        <li>Laser cutting and scoring for precise fold lines</li>
+                        <li>Assembly and deployment testing</li>
+                    </ol>
+                    
+                    <h3>Design Specifications</h3>
+                    <table class="specs-table">
+                        <thead>
+                            <tr>
+                                <th>Parameter</th>
+                                <th>Value</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Folded Dimensions</td>
+                                <td>120 x 50 x 10 cm</td>
+                            </tr>
+                            <tr>
+                                <td>Deployed Area</td>
+                                <td>~1 m²</td>
+                            </tr>
+                            <tr>
+                                <td>Deployed Height</td>
+                                <td>1.8 m</td>
+                            </tr>
+                            <tr>
+                                <td>Material</td>
+                                <td>2mm Corrugated PP</td>
+                            </tr>
+                            <tr>
+                                <td>Deployment Time</td>
+                                <td>&lt; 3 minutes</td>
+                            </tr>
+                            <tr>
+                                <td>Target Cycles</td>
+                                <td>200+</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="project-section">
+                <h2>Structural Analysis</h2>
+                <div class="content-card">
+                    <h3>Wind Load Verification</h3>
+                    <p>Wind pressure calculation for 15 km/h condition:</p>
+                    <div class="calculation-box">
+                        <p>q = ½ρV² = 0.5 × 1.225 × (4.17)² = <strong>10.63 Pa</strong></p>
+                    </div>
+                    
+                    <h3>FEA Results</h3>
+                    <table class="specs-table">
+                        <thead>
+                            <tr>
+                                <th>Wind Direction</th>
+                                <th>Max Von Mises Stress</th>
+                                <th>Min Factor of Safety</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>-90° (Upward)</td>
+                                <td>1.148 MPa</td>
+                                <td>8.709</td>
+                            </tr>
+                            <tr>
+                                <td>0° (Horizontal)</td>
+                                <td>2.039 MPa</td>
+                                <td>4.904</td>
+                            </tr>
+                            <tr>
+                                <td>+90° (Downward)</td>
+                                <td>3.567 MPa</td>
+                                <td>2.804</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p class="note">All cases remain within safe limits with FOS > 1.0</p>
+                </div>
+            </div>
+
+            <div class="project-section">
+                <h2>MATLAB Simulation</h2>
+                <div class="content-card">
+                    <h3>Origami Deployment Analysis</h3>
+                    <p>MATLAB code was developed to analyze triangular origami facet deployment:</p>
+                    <ul>
+                        <li>Compatible deployment height calculation</li>
+                        <li>Geometric incompatibility analysis</li>
+                        <li>Volume evolution during deployment</li>
+                        <li>Circular dome visualization with 16 segments</li>
+                    </ul>
+                    
+                    <h4>Key MATLAB Results</h4>
+                    <table class="specs-table">
+                        <thead>
+                            <tr>
+                                <th>Parameter</th>
+                                <th>Value</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Alpha (α)</td>
+                                <td>45°</td>
+                            </tr>
+                            <tr>
+                                <td>Beta (β)</td>
+                                <td>32°</td>
+                            </tr>
+                            <tr>
+                                <td>Compatible Height (wAᶜ)</td>
+                                <td>0.492</td>
+                            </tr>
+                            <tr>
+                                <td>Max Incompatibility (Δmax)</td>
+                                <td>0.0214</td>
+                            </tr>
+                            <tr>
+                                <td>Maximum Volume (Vmax)</td>
+                                <td>0.0170</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="project-section">
+                <h2>Humanitarian Impact</h2>
+                <div class="content-card">
+                    <h3>Sustainable Development Goals</h3>
+                    <div class="sdg-grid">
+                        <div class="sdg-card">
+                            <i class="fas fa-venus"></i>
+                            <h4>SDG 5</h4>
+                            <p>Gender Equality - Designed for women's privacy and dignity</p>
+                        </div>
+                        <div class="sdg-card">
+                            <i class="fas fa-industry"></i>
+                            <h4>SDG 9</h4>
+                            <p>Industry Innovation - Origami engineering application</p>
+                        </div>
+                        <div class="sdg-card">
+                            <i class="fas fa-city"></i>
+                            <h4>SDG 11</h4>
+                            <p>Sustainable Communities - Emergency shelter improvement</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-section">
+                <h2>Key Achievements</h2>
+                <div class="achievements-grid">
+                    <div class="achievement-card">
+                        <i class="fas fa-trophy"></i>
+                        <h4>Innovation</h4>
+                        <p>Novel origami-based humanitarian shelter design</p>
+                    </div>
+                    <div class="achievement-card">
+                        <i class="fas fa-calculator"></i>
+                        <h4>Analysis</h4>
+                        <p>Comprehensive FEA and mathematical validation</p>
+                    </div>
+                    <div class="achievement-card">
+                        <i class="fas fa-tools"></i>
+                        <h4>Fabrication</h4>
+                        <p>Successfully prototyped with laser-cut PP sheets</p>
+                    </div>
+                    <div class="achievement-card">
+                        <i class="fas fa-shield-alt"></i>
+                        <h4>Safety</h4>
+                        <p>Verified wind resistance with FOS > 2.8</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 Reda El Mikkawi. All rights reserved.</p>
+            <p>Mechanical Engineering Portfolio</p>
+        </div>
+    </footer>
+
+    <script src="project-script.js"></script>
+</body>
+</html>
