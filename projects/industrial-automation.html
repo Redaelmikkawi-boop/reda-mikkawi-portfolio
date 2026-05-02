@@ -1,1 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Industrial Automation System | Reda El Mikkawi</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="project-styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="../index.html" class="logo">REM</a>
+            <ul class="nav-links">
+                <li><a href="../index.html#home">Home</a></li>
+                <li><a href="../index.html#projects">Projects</a></li>
+                <li><a href="../index.html#experience">Experience</a></li>
+                <li><a href="../index.html#skills">Skills</a></li>
+                <li><a href="../index.html#certifications">Certifications</a></li>
+                <li><a href="../RedaElMikkawi-CV.pdf" target="_blank" class="cv-btn">CV</a></li>
+            </ul>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
 
+    <section class="project-detail">
+        <div class="container">
+            <div class="project-header">
+                <a href="../index.html#projects" class="back-link"><i class="fas fa-arrow-left"></i> Back to Projects</a>
+                <h1>Industrial Automation System</h1>
+                <div class="project-meta">
+                    <span class="meta-item"><i class="fas fa-calendar"></i> 2024</span>
+                    <span class="meta-item"><i class="fas fa-tag"></i> PLC & Automation</span>
+                    <span class="meta-item"><i class="fas fa-clock"></i> Semester Project</span>
+                </div>
+            </div>
+
+            <div class="project-showcase">
+                <img src="../images/projects/Industrial Automation/ProfileAutomation.png" alt="Industrial Automation System" class="showcase-image">
+            </div>
+
+            <div class="project-description">
+                <h2>Project Overview</h2>
+                <p>This industrial automation project involved the complete analysis, design, and simulation of a PLC-based automated press-fit assembly machine. The system utilizes Sequential Function Chart (SFC) programming, multiple sensor types, and actuator control to achieve precise automated assembly operations.</p>
+                
+                <h3>Key Features</h3>
+                <ul>
+                    <li>Complete machine functional analysis and subsystem identification</li>
+                    <li>Sequential Function Chart (SFC) development with step-by-step logic</li>
+                    <li>Sensor selection with industrial datasheets and specifications</li>
+                    <li>PLC ladder logic programming and simulation</li>
+                    <li>Sensor positioning layout and actuator integration</li>
+                    <li>Operating mode implementation (Manual/Automatic)</li>
+                </ul>
+            </div>
+
+            <div class="project-section">
+                <h2>Machine Functional Description</h2>
+                <div class="content-card">
+                    <p>The automated system performs press-fit assembly operations through coordinated subsystems:</p>
+                    <ul>
+                        <li><strong>Feeding System:</strong> Component loading and orientation mechanism</li>
+                        <li><strong>Processing Station:</strong> Press-fit operation with force control</li>
+                        <li><strong>Discharge System:</strong> Completed assembly ejection and sorting</li>
+                        <li><strong>Safety System:</strong> Emergency stop, light curtains, and interlock protection</li>
+                    </ul>
+                    <p><strong>Operating Modes:</strong> Manual mode for maintenance and setup, Automatic mode for continuous production cycles.</p>
+                </div>
+            </div>
+
+            <div class="project-section">
+                <h2>Sequence of Operation</h2>
+                <div class="content-card">
+                    <h3>Initial Conditions</h3>
+                    <ul>
+                        <li>All actuators in home position</li>
+                        <li>Safety systems engaged</li>
+                        <li>No fault conditions present</li>
+                    </ul>
+                    
+                    <h3>Start-up Sequence</h3>
+                    <ol>
+                        <li>System power-on and self-diagnostic check</li>
+                        <li>Safety circuit verification</li>
+                        <li>Component feeding system initialization</li>
+                        <li>Operator confirmation and mode selection</li>
+                    </ol>
+                    
+                    <h3>Normal Operation Cycle</h3>
+                    <ol>
+                        <li>Part presence detection at feeding station</li>
+                        <li>Component orientation verification</li>
+                        <li>Transfer to press-fit station</li>
+                        <li>Force-controlled press operation</li>
+                        <li>Quality check and verification</li>
+                        <li>Part ejection to discharge conveyor</li>
+                    </ol>
+                </div>
+            </div>
+
+            <div class="project-section">
+                <h2>Sensor and Actuator Selection</h2>
+                <div class="content-card">
+                    <table class="specs-table">
+                        <thead>
+                            <tr>
+                                <th>Sensor Type</th>
+                                <th>Specifications</th>
+                                <th>Operating Range</th>
+                                <th>Output Type</th>
+                                <th>Application</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Inductive Proximity</td>
+                                <td>M12, IP67, 24V DC</td>
+                                <td>0-4mm</td>
+                                <td>PNP NO</td>
+                                <td>Part presence detection</td>
+                            </tr>
+                            <tr>
+                                <td>Photoelectric</td>
+                                <td>Through-beam, IP65</td>
+                                <td>0-10m</td>
+                                <td>PNP NO/NC</td>
+                                <td>Safety light curtain</td>
+                            </tr>
+                            <tr>
+                                <td>Capacitive</td>
+                                <td>M18, IP67</td>
+                                <td>0-8mm</td>
+                                <td>PNP NO</td>
+                                <td>Material detection</td>
+                            </tr>
+                            <tr>
+                                <td>Encoder</td>
+                                <td>Incremental, 1000 PPR</td>
+                                <td>Continuous rotation</td>
+                                <td>Push-Pull</td>
+                                <td>Position feedback</td>
+                            </tr>
+                            <tr>
+                                <td>Pressure Sensor</td>
+                                <td>0-10 bar, 4-20mA</td>
+                                <td>0-145 PSI</td>
+                                <td>Analog</td>
+                                <td>Force monitoring</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                    <h3>Actuators</h3>
+                    <ul>
+                        <li><strong>Pneumatic Cylinders:</strong> Double-acting, controlled via 5/2 solenoid valves</li>
+                        <li><strong>Electric Motor:</strong> 3-phase induction motor with VFD control for conveyor</li>
+                        <li><strong>Hydraulic Press:</strong> Proportional valve control for precise force application</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="project-section">
+                <h2>Sensor Positioning Layout</h2>
+                <div class="content-card">
+                    <img src="../images/projects/Industrial Automation/SFC.png" alt="Sensor Layout" class="content-image">
+                    <p class="image-caption">Machine layout showing sensor and actuator positioning for optimal detection and control</p>
+                </div>
+            </div>
+
+            <div class="project-section">
+                <h2>Sequential Function Chart (SFC)</h2>
+                <div class="content-card">
+                    <img src="../images/projects/Industrial Automation/SFC.png" alt="SFC Diagram" class="content-image">
+                    <p class="image-caption">Complete SFC diagram showing steps, transitions, and conditions for the automated sequence</p>
+                    
+                    <h3>SFC Structure</h3>
+                    <ul>
+                        <li><strong>Step 0:</strong> Initial state - System check and safety verification</li>
+                        <li><strong>Step 1:</strong> Part feeding - Component loading and orientation</li>
+                        <li><strong>Step 2:</strong> Transfer - Move component to press station</li>
+                        <li><strong>Step 3:</strong> Press operation - Force-controlled assembly</li>
+                        <li><strong>Step 4:</strong> Inspection - Quality verification</li>
+                        <li><strong>Step 5:</strong> Ejection - Completed part removal</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="project-section">
+                <h2>PLC Implementation</h2>
+                <div class="content-card">
+                    <h3>Ladder Logic Programming</h3>
+                    <p>The PLC program was developed using structured ladder logic with clearly commented code sections. Key implementation features include:</p>
+                    <ul>
+                        <li>Modular programming structure with function blocks</li>
+                        <li>Emergency stop and safety interlock implementation</li>
+                        <li>Fault detection and handling routines</li>
+                        <li>Manual/Automatic mode switching logic</li>
+                        <li>Production counting and cycle time monitoring</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="project-section">
+                <h2>Simulation Results</h2>
+                <div class="content-card">
+                    <div class="video-container">
+                        <video controls>
+                            <source src="../images/projects/Industrial Automation/PRESS FIT.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <p class="image-caption">PLC simulation demonstrating press-fit assembly sequence with input activation and output response</p>
+                </div>
+            </div>
+
+            <div class="project-section">
+                <h2>Key Achievements</h2>
+                <div class="achievements-grid">
+                    <div class="achievement-card">
+                        <i class="fas fa-check-circle"></i>
+                        <h4>Complete Automation</h4>
+                        <p>Full cycle automation from feeding to ejection</p>
+                    </div>
+                    <div class="achievement-card">
+                        <i class="fas fa-shield-alt"></i>
+                        <h4>Safety Compliant</h4>
+                        <p>Integrated safety systems and emergency protocols</p>
+                    </div>
+                    <div class="achievement-card">
+                        <i class="fas fa-code"></i>
+                        <h4>Modular Code</h4>
+                        <p>Structured PLC programming with reusable blocks</p>
+                    </div>
+                    <div class="achievement-card">
+                        <i class="fas fa-chart-bar"></i>
+                        <h4>Optimized Cycle</h4>
+                        <p>Efficient sequence design for maximum throughput</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 Reda El Mikkawi. All rights reserved.</p>
+            <p>Mechanical Engineering Portfolio</p>
+        </div>
+    </footer>
+
+    <script src="project-script.js"></script>
+</body>
+</html>
